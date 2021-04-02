@@ -1,0 +1,259 @@
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents
+$ curl -L -o planets.zip https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0    452      0 --:--:-- --:--:-- --:--:--   453
+100   159  100   159    0     0    305      0 --:--:-- --:--:-- --:--:--   305
+100  293k  100  293k    0     0   330k      0 --:--:-- --:--:-- --:--:--  330k
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents
+$ unzip planets.zip
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg
+  inflating: planets/earth.jpeg
+  inflating: planets/pluto.jpeg
+  inflating: planets/arrakis.jpeg
+  inflating: planets/jupiter.jpeg
+  inflating: planets/venus.jpeg
+  inflating: planets/mars.jpeg
+  inflating: planets/cybertron.jpeg
+  inflating: planets/coruscant.jpeg
+  inflating: planets/uranus.jpeg
+  inflating: planets/neptune.jpeg
+  inflating: planets/saturn.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents
+$ ls
+ chalet/  'Ma musique'@  'Mes images'@  'Mes vidéos'@   planets/   planets.zip   quest/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents
+$ cd planets/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ ls
+arrakis.jpeg    cybertron.jpeg  jupiter.jpeg  mercury.jpeg  pluto.jpeg   uranus.jpeg
+coruscant.jpeg  earth.jpeg      mars.jpeg     neptune.jpeg  saturn.jpeg  venus.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ mkdir real fictional inhabited
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ ls
+arrakis.jpeg    cybertron.jpeg  fictional/  jupiter.jpeg  mercury.jpeg  pluto.jpeg  saturn.jpeg  venus.jpeg
+coruscant.jpeg  earth.jpeg      inhabited/  mars.jpeg     neptune.jpeg  real/       uranus.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ cd real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ mkir terrestrial gas-giants dwarf-planets
+bash: mkir: command not found
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ ls
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ mkdir terrestrial gas-giants dwarf-planets
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ ls
+dwarf-planets/  gas-giants/  terrestrial/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ cd ..
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ mv jupiter.jpeg mecury.jpeg saturn.jpeg venus.jpeg earth.jpeg neptune.jpeg uranus.jpeg mars.jpeg real/
+mv: cannot stat 'mecury.jpeg': No such file or directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  fictional/  inhabited/  mercury.jpeg  pluto.jpeg  real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ mv mercury.jpeg real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ mv arrakis.jpeg coruscant.jpeg cybertron.jpeg fictional/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ ls
+fictional/  inhabited/  pluto.jpeg  real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ cd fictional/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/fictional
+$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/fictional
+$ cp arrakis.* coruscant.* cybertron.* ../inhabited
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/fictional
+$ cd..
+bash: cd..: command not found
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/fictional
+$ cd ..
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ cd real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ ls
+dwarf-planets/  gas-giants/   mars.jpeg     neptune.jpeg  terrestrial/  venus.jpeg
+earth.jpeg      jupiter.jpeg  mercury.jpeg  saturn.jpeg   uranus.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ mv earth.jpeg m
+mars.jpeg     mercury.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ mv earth.jpeg mars.jpeg mercury.jpeg terrestrial/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ mv neptune.jpeg saturn.jpeg jupiter.jpeg uranus.jpeg gas-giants/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ ls
+dwarf-planets/  gas-giants/  terrestrial/  venus.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ mv venus.jpeg dwarf-planets/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ cd ..
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ ls
+fictional/  inhabited/  pluto.jpeg  real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ rm pluto.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ ls
+fictional/  inhabited/  real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ find
+.
+./fictional
+./fictional/arrakis.jpeg
+./fictional/coruscant.jpeg
+./fictional/cybertron.jpeg
+./inhabited
+./inhabited/arrakis.jpeg
+./inhabited/coruscant.jpeg
+./inhabited/cybertron.jpeg
+./real
+./real/dwarf-planets
+./real/dwarf-planets/venus.jpeg
+./real/gas-giants
+./real/gas-giants/jupiter.jpeg
+./real/gas-giants/neptune.jpeg
+./real/gas-giants/saturn.jpeg
+./real/gas-giants/uranus.jpeg
+./real/terrestrial
+./real/terrestrial/earth.jpeg
+./real/terrestrial/mars.jpeg
+./real/terrestrial/mercury.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ mv venus.jpeg terrestrial/
+mv: cannot stat 'venus.jpeg': No such file or directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ cd dwarf-planets
+bash: cd: dwarf-planets: No such file or directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ ls
+fictional/  inhabited/  real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ cd..
+bash: cd..: command not found
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ cd ..
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents
+$ planets
+bash: planets: command not found
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents
+$ cd planets/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets
+$ cd real/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ cd dwarf-planets/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ mv venus.jpeg .. terrestrial/
+mv: target 'terrestrial/' is not a directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ mv venus.jpeg .. terrestrial
+mv: target 'terrestrial' is not a directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ mv venus.jpeg .. /terrestrial
+mv: target '/terrestrial' is not a directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ ls
+venus.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ mv venus.jpeg ..terrestrial
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ mv venus.jpeg ../terrestrial
+mv: cannot stat 'venus.jpeg': No such file or directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ ls
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real/dwarf-planets
+$ cd ..
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ ls
+dwarf-planets/  gas-giants/  terrestrial/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ rm dwarf-planets/
+rm: cannot remove 'dwarf-planets/': Is a directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ ls
+dwarf-planets/  gas-giants/  terrestrial/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ rm -r dwarf-planets/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ ls
+gas-giants/  terrestrial/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$ find
+.
+./gas-giants
+./gas-giants/jupiter.jpeg
+./gas-giants/neptune.jpeg
+./gas-giants/saturn.jpeg
+./gas-giants/uranus.jpeg
+./terrestrial
+./terrestrial/earth.jpeg
+./terrestrial/mars.jpeg
+./terrestrial/mercury.jpeg
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Documents/planets/real
+$

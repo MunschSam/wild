@@ -1,0 +1,116 @@
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ pwd
+/c/Users/sam67
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ ls
+'3D Objects'/             NTUSER.DAT
+ AppData/                 ntuser.dat.LOG1
+'Application Data'@       ntuser.dat.LOG2
+ Contacts/                NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TM.blf
+ Cookies@                 NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000001.regtrans-ms
+ Documents/               NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000002.regtrans-ms
+ Downloads/               ntuser.ini
+ Favorites/               OneDrive/
+'Google Drive'/           Pictures/
+ IntelGraphicsProfiles/   Recent@
+ Links/                  'Saved Games'/
+'Local Settings'@         Searches/
+'Menu Démarrer'@          SendTo@
+'Mes documents'@          Videos/
+ MicrosoftEdgeBackups/   "Voisinage d'impression"@
+ Modèles@                'Voisinage réseau'@
+ Music/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ ls .
+'3D Objects'/             NTUSER.DAT
+ AppData/                 ntuser.dat.LOG1
+'Application Data'@       ntuser.dat.LOG2
+ Contacts/                NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TM.blf
+ Cookies@                 NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000001.regtrans-ms
+ Documents/               NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000002.regtrans-ms
+ Downloads/               ntuser.ini
+ Favorites/               OneDrive/
+'Google Drive'/           Pictures/
+ IntelGraphicsProfiles/   Recent@
+ Links/                  'Saved Games'/
+'Local Settings'@         Searches/
+'Menu Démarrer'@          SendTo@
+'Mes documents'@          Videos/
+ MicrosoftEdgeBackups/   "Voisinage d'impression"@
+ Modèles@                'Voisinage réseau'@
+ Music/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ ls -a
+ ./                       Modèles@
+ ../                      Music/
+ .gitconfig               NTUSER.DAT
+ .vscode/                 ntuser.dat.LOG1
+'3D Objects'/             ntuser.dat.LOG2
+ AppData/                 NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TM.blf
+'Application Data'@       NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000001.regtrans-ms
+ Contacts/                NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000002.regtrans-ms
+ Cookies@                 ntuser.ini
+ Documents/               OneDrive/
+ Downloads/               Pictures/
+ Favorites/               Recent@
+'Google Drive'/          'Saved Games'/
+ IntelGraphicsProfiles/   Searches/
+ Links/                   SendTo@
+'Local Settings'@         Videos/
+'Menu Démarrer'@         "Voisinage d'impression"@
+'Mes documents'@         'Voisinage réseau'@
+ MicrosoftEdgeBackups/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ ls Pictures
+'Camera Roll'/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ ls /c/Users/sam67
+'3D Objects'/             NTUSER.DAT
+ AppData/                 ntuser.dat.LOG1
+'Application Data'@       ntuser.dat.LOG2
+ Contacts/                NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TM.blf
+ Cookies@                 NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000001.regtrans-ms
+ Documents/               NTUSER.DAT{dbd7c608-769f-11eb-b981-1008b12d7218}.TMContainer00000000000000000002.regtrans-ms
+ Downloads/               ntuser.ini
+ Favorites/               OneDrive/
+'Google Drive'/           Pictures/
+ IntelGraphicsProfiles/   Recent@
+ Links/                  'Saved Games'/
+'Local Settings'@         Searches/
+'Menu Démarrer'@          SendTo@
+'Mes documents'@          Videos/
+ MicrosoftEdgeBackups/   "Voisinage d'impression"@
+ Modèles@                'Voisinage réseau'@
+ Music/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ ls ..
+'All Users'@   Default/  'Default User'@   desktop.ini   Public/   sam67/
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ cd Pictures
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Pictures
+$ cd ..
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ cd /usr/c
+bash: cd: /usr/c: No such file or directory
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ cd
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ cd ~
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~
+$ cd ~/Pictures
+
+sam@DESKTOP-0AVI4BJ MINGW64 ~/Pictures
+$
