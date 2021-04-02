@@ -1,0 +1,35 @@
+nav ul li {display:inline-block;
+padding:5px;
+color:white;
+}
+nav{background-color:gray;}
+
+.carousel{background-color:silver;
+width:100%;
+height:200px;}
+
+.texte h2{text-align:center;
+color:silver;}
+ 
+.box article{display:inline-block;
+background-color:silver;
+height:200px;
+width:33%;
+}
+
+form h2{color:silver;
+border-top-style: solid;
+border-color:black;
+text-align:left; 
+}
+
+form {
+text-align:center;
+}
+
+input, textarea{width:50%;
+display:block;
+margin:10px auto;
+}
+
+
