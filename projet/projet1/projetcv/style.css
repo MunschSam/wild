@@ -1,0 +1,147 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+
+/* DESCRIPTION */
+
+#description {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    background: #1b90ad;
+    margin: 10px 10px 0 10px;
+    color: white;
+}
+
+
+/* SPLIT */
+
+#split {
+    display: flex;
+    color: white;
+}
+
+.block-1 {
+    background: #e74c3c;
+    padding: 30px;
+    margin: 10px 0px 10px 10px;
+}
+
+.block-2 {
+    background: #3498db;
+    Padding: 30px;
+    margin: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin: 0 10px 0;
+    background: yellowgreen;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+/* PAGE FORMATION */
+
+.corps {
+    background: aquamarine;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    color: white;
+    justify-content: left;
+    line-height: 300%;
+}
+
+.corps ul {
+    font-size: 30px;
+}
+
+.entete {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    background: #1b90ad;
+    margin: 10px 10px 0 10px;
+    color: white;
+}
+
+.logo img {
+    width: 60%;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* PAGES SECONDAIRES */
+
+#container {
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    height: 500px;
+    color: white;
+}
+
+.box-1 {
+    background: #e74c3c;
+    height: 830px;
+    width: 50%;
+    margin-right: 10px;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+.box-2 {
+    background: center / cover no-repeat url("./src/img/colonel-sanders.jpg");
+    height: 500px;
+    width: 50%;
+}
