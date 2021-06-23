@@ -1,0 +1,15 @@
+{# TODO : manage errors display #}
+
+<form method="post" enctype="multipart/form-data">
+	<input type="hidden" value="{{ artist.id }}" name="id">
+	<p>Prenom</p>
+	<input type="text" value="{{ artist.name }}" name="name">
+	<p>Nom</p>
+	<input type="text" value="{{ artist.lastname }}" name="lastname">
+	<p>Age</p>
+	<input type="number" value="{{ artist.age }}" name="age">
+	<p>Presentation</p>
+	<input class="champ_presentation" type="textarea" value="{{ artist.presentation }}" name="presentation">
+	<input class="shadowed-7" type="submit" value="Valider">
+	
+</form>

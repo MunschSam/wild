@@ -1,0 +1,12 @@
+<form method="post">
+    <input type="hidden" value="{{ goodie.id }}" name="id"><br>
+    <label for="name" class="label_edit"> Nom de l'article :</label><br>
+    <input type="text" value="{{ goodie.name }}" name="name"><br>
+    <label for="name" class="label_edit"> Présentation de l'article :</label><br>
+    <textarea value="{{ goodie.presentation }}" name="presentation" rows="5" cols="80"></textarea><br>
+    <label for="name" class="label_edit"> Prix de l'article :</label><br>
+    <input type="number" value="{{ goodie.prix }}" name="prix"><br>
+    <label for="name" class="label_edit"> Stock restant de l'article :</label><br>
+    <input type="number" value="{{ goodie.stockRemain }}" name="stockRemain"><br>
+    <input type="submit" value="Valider">
+</form>

@@ -1,0 +1,8 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <h1>Modifiez votre album {{ album.name }}</h1>
+    {% include 'Album/_form.html.twig' %}
+    <a href="/Album/show/{{ album.id }}">Retour</a>
+{% endblock %}

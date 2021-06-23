@@ -1,0 +1,25 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <3>Nom de l'article :</h3> <br> {{ goodie.name }} <br>
+    Description de l'article : <br>{{ goodie.presentation }}<br>
+    Prix de l'article : {{ goodie.prix }} € <br>
+    Stock de l'article : {{ goodie.stockRemain }} pièces <br>
+
+
+    Pour le modifier à nouveau :  
+<a id="button_goodie" class="link_goodie" href="/Goodie/edit/{{ goodie.id }}"> Modifier</a>
+
+
+    Pour le supprimer : 
+    <form action="/Goodie/delete/{{ goodie.id }}" method="POST" onsubmit="return verif_goodie();">
+        <button id="btn_delete">Delete</button>
+    </form>
+    Retour à l'acceuil
+    <form action="/Goodie/index/{{ goodie.id }}" method="POST">
+        <button>Liste des goodies</button>
+    </form>
+
+
+
+{% endblock %}

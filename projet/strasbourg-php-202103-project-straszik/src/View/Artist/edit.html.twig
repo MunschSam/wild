@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Edit artist {{ artist.name }}</h1>
+    {% include 'Artist/_form.html.twig' %}
+    <div class="edit_button">
+    <a class="shadowed-7" href="/artist/show/{{ artist.id }}">Back</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('../assets/images/events.jpg');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-heading-medium">Evenements</h1>
+    </div>
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+    {% for event in events %}
+        <div>
+        
+            <div class="box">{{event.name}} est disponible le : {{event.date}} au prix de : {{event.prix}} € -- 
+            {% if user.name == "admin" %}<a class="li_event" href="/event/edit/{{event.id}}">Modifier</a>{% endif %}
+            </div>
+        
+        </div>
+    {% endfor %}
+    </div>
+    {% if user.name == "admin" %}
+    <a class="uk-button uk-button-default uk-align-center" href="/event/add/{{event.id}}">Ajouter</a>
+    {% endif %}
+{% endblock %}

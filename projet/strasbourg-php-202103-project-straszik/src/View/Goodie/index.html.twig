@@ -1,0 +1,31 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('../assets/images/goodies.jpg');">
+
+        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-heading-medium">Goodies</h1>
+
+    </div>
+
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+        {% for goodie in goodies %}
+
+
+            <div>
+                <div class="box"><h4>Nom article : </h4>{{ goodie.name }} <br> <h4>Description article :</h4> {{ goodie.presentation }} <br> <h4>Prix actuel : </h4>{{ goodie.prix }} €<img src={{ random(['/assets/images/chemise.jpg', '/assets/images/chemise1.jpg', '/assets/images/chemise2.jpg'
+                        , '/assets/images/chemise3.jpg', '/assets/images/chemise4.jpg', '/assets/images/chemise5.jpg']) }}/><br>
+
+                    {% if user.name == "admin" %}
+                        <a class="uk-button uk-button-default uk-align-center" href="/Goodie/edit/{{ goodie.id }}"> Modifier</a>
+                    {% endif %}
+                </div>
+
+            </div>
+
+        {% endfor %}
+    </div>
+    {% if user.name == "admin" %}
+        <a class="uk-button uk-button-default uk-align-center" href="/Goodie/add">Ajouter un article</a>
+    {% endif %}
+
+
+{% endblock %}

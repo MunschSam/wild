@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    {% if message is defined %}
+        <pre style="color:#ca2f09;font-size:2em;background-color:grey;border-radius:40%;text-align:center;font-weight:bold;"> {{ message }} </pre>
+    {% endif %}
+    <h1> Créer un compte :D</h1>
+    {% include 'User/_form.html.twig' %}
+{% endblock %}

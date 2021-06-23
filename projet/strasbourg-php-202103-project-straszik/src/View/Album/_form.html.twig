@@ -1,0 +1,14 @@
+{# TODO : manage errors display #}
+
+<form method="post" class="formulaire">
+    <input type="hidden" value="{{ album.id }}" name="id">
+    <input type="text" value="{{ album.name }}" name="name" placeholder="Nom" class="input_form">
+    <input type="text" value="{{ album.prix }}" name="prix" placeholder="Prix de l'album" class="input_form">
+    <label for="stock">Est il en stock ?</label>
+    <input type="checkbox" name="stock">
+    <input type="text" value="{{ album.description }}" name="description" placeholder="Hopla une description ici" class="input_form">
+
+    <input type="submit" value="Valider" class="formulaire_boutton">
+
+
+</form>

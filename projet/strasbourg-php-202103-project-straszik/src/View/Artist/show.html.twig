@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Artiste {{ artist.name }} {{artist.lastname}}</h1>
+    <p>{{ artist.id }}. 
+    <p>Prenom: {{ artist.name }}</p> 
+    <p>Nom: {{artist.lastname}}</p> 
+    <p>Age: {{artist.age}} ans</p> 
+    <p>Presentation: {{artist.presentation}}</p>
+    
+    <div class="edit_button">
+    <a class="shadowed-7" href="/artist/edit/{{ artist.id }}">Edit</a>
+    <form action="/artist/delete/{{artist.id}}" method="POST" onsubmit="return verif_artist();">
+        <button class="shadowed-7" id="btn_delete">Delete</button>
+    </form>
+    <a class="shadowed-7" href="/artist/index">Back</a>
+    </div>
+{% endblock %}

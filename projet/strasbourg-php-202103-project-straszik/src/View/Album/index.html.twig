@@ -1,0 +1,31 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+    Album Hopla Guys
+{% endblock %}
+
+{% block content %}
+
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('../assets/images/albums.jpg');">
+
+        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-heading-medium">Albums</h1>
+
+    </div>
+    <h2 class="h2_album">Vos albums</h2>
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+        {% for album in albums %}
+            <div>
+                <div class="box">{{ album.name ~ album.description }}</div>
+                {% if user.name == "admin" %}
+                    <a class="uk-button uk-button-default uk-align-center" href="/Album/show/{{ album.id }}">Modifier</a>
+                {% endif %}
+
+            </div>
+
+
+        {% endfor %}
+    </div>
+    {% if user.name == "admin" %}
+        <a class="uk-button uk-button-default uk-align-center" href="/Album/add">Ajouter</a>
+    {% endif %}
+{% endblock %}

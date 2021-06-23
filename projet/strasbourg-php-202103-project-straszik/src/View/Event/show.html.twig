@@ -1,0 +1,11 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Event {{ event.name }}</h1>
+    <p>{{ event.id }}. {{ event.name }}</p>
+    <a href="/event/edit/{{ event.id }}">Edit</a>
+    <form action="/event/delete/{{event.id}}" method="POST" onsubmit="return verif_event();">
+        <button id="btn_delete">Supprimer</button>
+    </form>
+    <a href="/event/index">Aller sur la page index</a>
+{% endblock %}

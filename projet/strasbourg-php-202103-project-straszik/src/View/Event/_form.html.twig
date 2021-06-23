@@ -1,0 +1,10 @@
+<form method="post">
+    <input type="hidden" value="{{ event.id }}" name="id">
+    <p><input type="text" value="{{ event.name }}" name="name"  placeholder="Name"></p>
+    <p><input type="date" value="{{ event.date }}" name="date"  placeholder="Date"></p>
+    <p><input type="number" value="{{ event.prix }}" name="prix"  placeholder="Prix"><br>
+    <p><input type="number" value="{{ event.placeRemain }}" name="placeRemain"  placeholder="Nombres de places"></p>
+    <p><input type="text" value="{{ event.adress }}" name="adress"  placeholder="Adresse"></p>
+    <p><textarea value="{{ event.description }}" name="description" rows="10" cols="80"  placeholder="Description"></textarea></p>
+    <input type="submit" value="Valider">
+</form>

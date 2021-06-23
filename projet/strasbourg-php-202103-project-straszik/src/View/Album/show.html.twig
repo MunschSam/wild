@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <h1>Album {{ album.name }}</h1>
+    <p>{{ album.id }}. {{ album.name }}</p>
+    <section class="section_show">
+    <a href="/Album/edit/{{ album.id }}" class="btn_show">Modifier</a>
+    <form action="/Album/delete/{{album.id}}" method="POST" onsubmit="return verif_album();">
+        <button class="btn_show" id="btn_delete">Effacer</button>
+    </form>
+    <a href="/Album/index" class="btn_show">Retour</a>
+    </section>
+{% endblock %}

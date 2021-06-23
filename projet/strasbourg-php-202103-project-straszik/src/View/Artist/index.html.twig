@@ -1,0 +1,52 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('../assets/images/artists.jpg');">
+
+        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-heading-medium">Artistes</h1>
+
+    </div>    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+
+
+    {% if user.name == "admin" %}
+
+        <h1>Artistes</h1>
+        <ul>
+            {% for artist in artists %}
+                <li><a class="double-6" href="/artist/show/{{ artist.id }}">id {{ artist.id }}: {{ artist.name }} {{artist.lastname}}</a></li>
+            {% else %}
+                <li>Nothing to display</li>
+            {% endfor %}
+        </ul>
+        <div class="edit_button">
+            <a class="uk-button uk-button-default uk-align-center" href="/artist/add">Ajouter</a>
+        </div>
+
+
+    {% endif %}
+
+    {% for artist in artists %}
+
+        <div>
+            <div class="box">{{ artist.name }} {{artist.lastname}} {{artist.age}} </br>{{artist.presentation}}
+
+                <img src={{ random(['../assets/uploads/guitar.png', '../assets/uploads/chanteur.png', '../assets/uploads/batteur.png']) }}/>
+
+
+
+            </div>
+        </div>
+
+
+    {% else %}
+        <div>Nothing to display</div>
+    {% endfor %}
+</div>
+
+    </div>
+
+
+
+
+{% endblock %}

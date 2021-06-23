@@ -1,0 +1,41 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+{% if user is defined %}
+    <h1> Mon Compte : </h1>
+    <h2> Bonjour <span class="user">{{ user.name }}</span> , content de te voir parmis nous! </h2>
+    <h3> Mes coordonnées personnelles : <h3>
+
+    <table>
+        <tbody>
+            <tr>
+                <td><span class="user_login">Mon nom </span>:</td>
+                <td>{{ user.name }}</td>
+            </tr>
+            <tr>
+                <td><span class="user_login">Mon prénom </span>:</td>
+                <td>{{ user.lastname }}</td>
+            </tr>
+            <tr>
+                <td><span class="user_login">Mon email </span>:</td>
+                <td>{{ user.mail }}</td>
+            </tr>
+            <tr>
+                <td><span class="user_login">Mon age </span>:</td>
+                <td>{{ user.age }} ans</td>
+            </tr>
+            <tr>
+                <td><span class="user_login">Mon mot de passe</span> :</td>
+                <td>**************</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p> Une erreur dans tes coodornées ? C'est pas grave tu peux les changer par <br>ici => <a href="/User/edit/{{ user.id }}"> <button type="submit" name="submit">
+     Modifier mes coordonnées </button></a></p>
+    <p> Si au contraire tu ne veux plus faire partis de l'aventure .... <br>
+    <form action="/User/delete/{{ user.id }}" method="POST" onsubmit="return verif();">
+        <button id="btn_delete">Delete mon compte</button>
+    </form>
+    {% endif %}
+{% endblock %}

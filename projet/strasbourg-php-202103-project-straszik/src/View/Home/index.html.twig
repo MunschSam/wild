@@ -1,0 +1,132 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('./assets/images/headerimage.jpg');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-heading-medium">FAN de HOPLA GUYS ?</h1>
+
+</div>
+
+    <figure>
+        <figcaption class="uk-heading-small uk-text-center">Ecouter le dernière album</figcaption>
+        <audio
+                controls
+                src="../assets/musique/bredelers-bombom-stand.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+    </figure>
+<div class="artistes">
+    <div class="heading">
+    <h2 class="uk-heading-small uk-text-center">
+        Artistes
+    </h2>
+    <h3 class="uk-text-center">
+        Découvrez-les
+    </h3>
+    </div>
+    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <img class="uk-card uk-card-default uk-card-body" src="./assets/images/singer1.jpg">
+        </div>
+        <div>
+            <img class="uk-card uk-card-default uk-card-body" src="./assets/images/singer2.jpg">
+        </div>
+        <div>
+            <img class="uk-card uk-card-default uk-card-body" src="./assets/images/singer3.jpg">
+        </div>
+    </div>
+</div>
+<p uk-margin>
+    <a href="/Artist/index"><button class="uk-button uk-button-default uk-align-center">Découvrir le groupe</button></a>
+</p>
+
+
+    <div class="uk-child-width-expand@s uk-flex-middle background-grey" uk-grid>
+        <div class="uk-grid-item-match">
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="/assets/images/album.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="album_title">
+                <h1 class="uk-text-center">Titre</h1>
+                <p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi consequuntur culpa cumque dignissimos dolorem explicabo illum maiores mollitia nostrum. Ab aliquam amet, consectetur consequatur cum illum obcaecati unde voluptatem.</p>
+                <a href="/Album/index"><button class="uk-button uk-button-default uk-align-center">Cliquer ici</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="event event-background">
+        <div class="heading">
+            <h2 class="uk-heading-small uk-text-center">
+                Tous les Events
+            </h2>
+            <h3 class="uk-text-center">
+                Découvrez-les
+            </h3>
+        </div>
+
+
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">15 octobre 2021</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <div>
+                <a href="/Event/index"><button class="uk-button uk-button-default uk-align-center uk-flex-middle">Acheter un billet</button></a>
+            </div>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">15 octobre 2021</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <div>
+                <a href="/Event/index"><button class="uk-button uk-button-default uk-align-center">Acheter un billet</button></a>
+            </div>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">15 octobre 2021</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <div>
+                <a href="/Event/index"><button class="uk-button uk-button-default uk-align-center">Acheter un billet</button></a>
+            </div>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">15 octobre 2021</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <div>
+                <a href="/Event/index"><button class="uk-button uk-button-default uk-align-center">Acheter un billet</button></a>
+            </div>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">15 octobre 2021</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <div>
+                <a href="/Event/index"><button class="uk-button uk-button-default uk-align-center">Acheter un billet</button></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    {% endblock %}

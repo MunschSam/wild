@@ -1,0 +1,35 @@
+
+
+
+                <nav class="uk-background-muted" uk-navbar>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-position-left"><a href="/"><img src="../assets/images/straszik.png" alt="" width="130" style="margin-left: 50px;"/></a>
+                                </li>
+                            {% if user is defined %}
+                                <li><a href="/User/index">{{ user.name }}</a></li>
+                            {% endif %}
+                            <li><a href="/">Accueil</a></li>
+                            <li><a href="/Artist/index">Artistes</a></li>
+                            <li><a href="/Album/index">Albums</a></li>
+                            <li><a href="/Event/index">Events</a></li>
+                            <li><a href="/goodie/index">Goodies</a></li>
+                            <!-- This is a button toggling the modal -->
+                            <button class="uk-button uk-button-default uk-margin-small-right btn-2" type="button" uk-toggle="target: #modal-example">Mon espace</button>
+
+
+                            <!-- This is the modal -->
+                            <div id="modal-example" uk-modal>
+                                <div class="uk-modal-dialog uk-modal-body">
+                                    {% include './Login/login.html.twig'%}
+                                    <p class="uk-text-right">
+                                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+
+
+
