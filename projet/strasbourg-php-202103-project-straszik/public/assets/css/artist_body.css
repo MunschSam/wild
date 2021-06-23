@@ -1,0 +1,45 @@
+.box {
+    background-color: antiquewhite;
+    margin: 0 140px;
+    border-radius: 10px;
+    box-shadow: grey 5px 6px 15px;
+}
+
+.champ_presentation {
+    width: 30%;
+    height: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.shadowed-7 {
+    padding: 8px;
+    box-shadow: 0 0 0px #0004;
+    transition: 0.4s linear, background 0.3s 0.4s linear, color 0.3s 0.4s linear;
+    margin: 10px;
+}
+
+.shadowed-7:hover {
+    background-color: #000;
+    color: #fff;
+    transform: perspective(100px) translateZ(5px);
+    box-shadow: 0 10px 20px #000a;
+    transition: 0.4s linear, transform 0.3s 0.4s linear, box-shadow 0.3s 0.4s linear;
+    border-radius: 10px;
+}
+
+.double-6 {
+    padding-bottom: 4px;
+    background: linear-gradient(currentColor 0 0) bottom 0px center;
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+    transition: 0.5s linear, background-position 0s 0.5s;
+}
+
+.double-6:hover {
+    background-size: 100% 3px, 50% 3px, 50% 3px;
+    background-position: bottom, bottom 0px left 0;
+}

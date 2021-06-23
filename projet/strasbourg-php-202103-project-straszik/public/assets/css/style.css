@@ -1,0 +1,130 @@
+
+@import "artist_body.css";
+@import "artist_views.css";
+
+/* style for common navbar */
+
+@import "navbar.css";
+
+/*style for goodie */
+
+@import "goodie.css";
+
+/* style for common footer */
+
+@import "footer.css";
+
+
+@import "event.css";
+
+@import "album.css";
+
+/* ----------------------------
+    GENERAL
+---------------------------- */
+*{
+    font-family: Montserrat, sans-serif!important;
+}
+
+.uk-heading-small {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ec800c;
+}
+
+.uk-button-default {
+    background-color: #ec800c;
+    color: white;
+    padding: 10px 20px;
+    width: 250px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 6px 6px 15px -3px rgb(0 0 0 / 84%);
+}
+
+.uk-button-default:hover {
+    background-color: white;
+    color: #ec800c;
+    border: 3px solid #ec800c;
+    box-shadow: none;
+}
+
+@media (min-width: 1200px)
+    .uk-grid>* {
+        padding-left: 0!important;
+    }
+
+    .uk-grid>* {
+        padding-left: 0!important;
+    }
+/* ----------------------------
+    HEADER
+---------------------------- */
+
+.uk-height-large.uk-background-cover.uk-light.uk-flex {
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+/* ----------------------------
+    SECTION AUDIO
+---------------------------- */
+
+
+audio {
+    width: 100%;
+}
+
+/* ----------------------------
+    SECTION ARTISTS
+---------------------------- */
+
+img.uk-card.uk-card-default.uk-card-body {
+    height: 440px;
+    width: 100%;
+}
+
+.artistes{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/* ----------------------------
+    SECTION ALBUM
+---------------------------- */
+
+.background-grey{
+    background-color: #DCDCDC	;
+}
+
+.uk-card-default {
+    background: none;
+    box-shadow: none;
+}
+
+/* ----------------------------
+    SECTION EVENT
+---------------------------- */
+
+.event-background{
+    background-color: #303030	;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text-white{
+    color: white;
+    font-size: 20px;
+}
+.user{
+    color:red;
+}
+.user_login{
+    color:#1058cd;
+    text-decoration: underline red;
+}
+h4{
+    color: #1058cd;
+    text-decoration: underline;
+}

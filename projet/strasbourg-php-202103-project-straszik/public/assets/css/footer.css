@@ -1,0 +1,68 @@
+/****************************************** BLOC STYLE POUR FOOTER ****************************************/
+
+@media screen AND (min-width: 250px) {
+    .contenaire_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: linear-gradient(0.30turn, white);
+        border: 1px dashed black;
+        padding: 60px;
+        
+    }
+    .footer_left_side {
+        display: block;
+        width: 20%;
+        margin-right: 25px;
+    }
+    .footer_right_side {
+        display: block;
+        width: 20%;
+        margin-left: 25px;
+    }
+
+
+    .footer_logo_straszik{
+        align-items: center;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+  
+
+    .contenaire_footer h6 {
+
+        text-align: center;
+        font-size: 1.2em;
+        font-family: Montserrat, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #ec800c;
+    }
+
+
+    .footer_footer{
+        background-color: #ec800c;
+        color: #D3D3D3;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        height: 50px;
+        text-align: center;
+    }
+
+    .uk-icon-button svg {
+        color: white;
+        width: 30px;
+    }
+
+    .uk-icon-button {
+        height: 50px;
+        width: 50px;
+        /* font-size: 120px; */
+        margin-top: 20px;
+        background-color: #ec800c;
+    }
+
+
+
+}

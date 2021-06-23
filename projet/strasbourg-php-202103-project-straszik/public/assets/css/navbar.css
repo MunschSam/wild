@@ -1,0 +1,40 @@
+
+
+
+/* ----------------------------
+    MENU
+---------------------------- */
+.uk-background-muted{
+    background-color: #ec800c;
+
+}
+.btn-2 {
+    background-color: white;
+    padding: 10px;
+    height: 60px;
+    color: orange;
+    width: 160px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+.btn-2:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.uk-navbar-nav>li>a {
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.uk-navbar-nav>li>a:hover {
+    color: #303030;
+}
+
+li.uk-position-left img {
+    height: 80px;
+    width: 80px;
+}
+
